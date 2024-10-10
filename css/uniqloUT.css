@@ -1,0 +1,497 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar Style */
+
+.top_nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    z-index: 1000;
+    height: 70px;
+}
+
+.logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    float: left;
+    margin: 15px;
+    height: 40px;
+    width: 70px;
+}
+
+.nav_menu {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.nav_menu a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 2px;
+}
+
+.logoUT {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoUT img {
+    width: 60px;
+    height: auto;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.icons a {
+    color: red;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.icons i {
+    font-size: 20px;
+}
+
+/* Hero Image Style */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full-screen height */
+    overflow-y: auto; /* Allow vertical scrolling */
+    background-size: cover;
+    object-fit: cover;
+}
+
+.hero-video {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+.videoText {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.videoText h1 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.videoText p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 400px;
+}
+
+.heroImg {
+    width: 100%;
+    overflow: hidden;
+    display: block;
+    overflow-y: auto;
+    position: relative;
+}
+
+.ut-graphic-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left Side: Logo and Text */
+
+.utImage {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 50px;
+}
+
+.utImage img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.utGraphic { 
+
+    width: 150px;
+    height: auto;
+    margin: 20px;
+}
+
+.utText {
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+    margin: 0;
+    max-width: 400px;
+}
+
+/* Carousel Section */
+
+.utCarousel {
+    flex: 2;
+    position: relative;
+    max-width: 700px;
+    padding-left: 20px;
+}
+
+.carouselWrapper {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slide {
+    min-width: 33.33%;
+    transition: transform 0.5s ease-in-out;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    padding-right: 20px;
+}
+
+/* Carousel Dots */
+
+.carouselNav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background-color: red;
+}
+
+/* Third Section */
+
+.third-section {
+    background-color: #f4f4f4;
+    padding: 40px;
+}
+
+.content-box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    width: 40%;
+    padding: 15px;
+}
+
+.card img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.card-text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-title {
+    font-weight: regular;
+    font-size: 14px;
+    margin-bottom: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+
+.card-text p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.card-text .date {
+    font-size: 12px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* UT Collection Section */
+
+.ut-collection {
+    padding: 40px;
+    background-color: white;
+}
+
+.ut-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.ut-header h2 {
+    color: red;
+    font-size: 22px;
+    font-weight: regular;
+}
+
+.ut-header a {
+    color: red;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.ut-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.ut-card {
+    width: 23%;
+    position: relative;
+}
+
+.ut-card img {
+    width: 100%;
+    height: auto;
+}
+
+/* Carousel Section */
+
+
+
+.heroText h1 {
+    position: absolute;
+    top: 54%;
+    left: 10%;
+    color: white;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.heroText p {
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    color: white;
+    text-align: left;
+    font-size: 17px;
+}
+
+.heroText p2 {
+    position: absolute;
+    top: 67%;
+    left: 10%;
+    color: white;
+    text-align: left;
+    font-size: 17px;
+}
+
+.heroText p3 {
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    color: white;
+    text-align: left;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Adjust the navigation bar for mobile view */
+    .top_nav {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .logo {
+      margin: 0;
+      width: 100px;
+      height: auto;
+    }
+  
+    .nav_menu {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 0;
+    }
+  
+    .icons {
+      justify-content: center;
+    }
+  
+    /* Adjust hero section for mobile view */
+    .hero {
+      height: auto;
+    }
+  
+    .hero-video {
+      height: auto;
+    }
+  
+    .videoText {
+      top: 60%;
+      font-size: 14px;
+    }
+  
+    .hero-btn {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    /* Adjust the second section (ut-graphic-section) */
+    .ut-graphic-section {
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .utImage {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .utText {
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  
+    .utCarousel {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .carouselWrapper {
+      flex-direction: column;
+    }
+  
+    .slide {
+      width: 100%;
+      min-width: 100%;
+    }
+  
+    /* Adjust third section for mobile view */
+    .third-section {
+      padding: 20px;
+    }
+  
+    .content-box {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .card {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    .card img {
+      width: 100px;
+    }
+  
+    /* Adjust UT Collection Section */
+    .ut-collection {
+      padding: 20px;
+    }
+  
+    .ut-cards {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .ut-card {
+      width: 100%;
+    }
+  
+    /* Adjust font size for hero text */
+    .heroText h1 {
+      font-size: 20px;
+    }
+  
+    .heroText p {
+      font-size: 14px;
+    }
+  
+    .heroText p2,
+    .heroText p3 {
+      font-size: 14px;
+    }
+  }
+  
